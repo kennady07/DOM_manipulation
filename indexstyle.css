@@ -1,0 +1,469 @@
+*{
+    margin:0px;
+    box-sizing:border-box;
+}
+.heading{
+    text-align:centre;
+    font-weight:bold;
+    margin-left:15%;
+    margin-top: 3%;
+}
+/* .maincontainer{
+    
+    height:890px;
+    width:100%;
+    padding-top: 50px;
+    padding-left:17%;
+} */
+body{
+    padding-left:20%;
+}
+/* 
+.container{
+    border: 1px solid black;
+    height:1899px;
+    width:780px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.box{
+    position: absolute;
+    border:1px solid black;
+    color:blue;
+    left:20px;
+    top:20px;
+    height: 108px;
+    width: 108px;
+}
+.upload{
+    position: absolute;
+    top:50px;
+    left:60px;
+}
+.taxv{
+    font-size:20px;
+    position: absolute;
+    right:10px;
+    top:20px;
+    border:1px solid white;
+    padding:5px;
+    width: 180px;
+}
+
+.cname{ 
+    position: absolute;
+    left:20px;
+    top:180px;
+    border:1px solid white;
+    padding:5px;
+    
+}
+.yname{
+    position: absolute;
+    left:20px;
+    top:210px;
+    border:1px solid white;
+    padding:5px;
+}
+.cgst{
+    position: absolute;
+    left:20px;
+    top:240px;
+    border:1px solid white;
+    padding:5px;
+}
+.caddr{
+    position: absolute;
+    left:20px;
+    top:270px;
+    border:1px solid white;
+    padding:5px;
+}
+.city{
+    position: absolute;
+    left:20px;
+    top:300px;
+    border:1px solid white;
+    padding:5px;
+}
+.state{
+    position: absolute;
+    left:20px;
+    top:330px;
+    border:1px solid white;
+    padding:5px;
+}
+.country{
+    position: absolute;
+    left:20px;
+    top:360px;
+    border:1px solid white;
+    padding:5px;
+}
+.billto{
+    position: absolute;
+    left:20px;
+    top:460px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.clicom{
+    position: absolute;
+    left:20px;
+    top:490px;
+    border:1px solid white;
+    padding:5px;
+}
+.cligst{
+    position: absolute;
+    left:20px;
+    top:520px;
+    border:1px solid white;
+    padding:5px;
+}
+.cliaddr{
+    position: absolute;
+    left:20px;
+    top:550px;
+    border:1px solid white;
+    padding:5px;
+}
+.clicity{
+    position: absolute;
+    left:20px;
+    top:580px;
+    border:1px solid white;
+    padding:5px;
+}
+.clistate{
+    position: absolute;
+    left:20px;
+    top:610px;
+    border:1px solid white;
+    padding:5px;
+}
+.clicountry{
+    position: absolute;
+    left:20px;
+    top:640px;
+    border:1px solid white;
+    padding:5px;
+}
+.invoice{
+    position: absolute;
+    right:200px;
+    top:460px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.invoicedt{
+    position: absolute;
+    right:200px;
+    top:490px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.duedt{
+    position: absolute;
+    right:200px;
+    top:520px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.inv12{
+    position: absolute;
+    right:50px;
+    top:460px;
+    border:1px solid white;
+    padding:5px;
+}
+.invoicedt1{
+    position: absolute;
+    right:120px;
+    top:490px;
+    border:1px solid white;
+    padding:5px;
+}
+.duedt1{
+    position: absolute;
+    right:120px;
+    top:520px;
+    border:1px solid white;
+    padding:5px;
+}
+.supply{
+    position: absolute;
+    left:20px;
+    top:710px;
+    border:1px solid white;
+    padding:5px;
+}
+.supplystate{
+    position: absolute;
+    left:140px;
+    top:713px;
+    border:1px solid white;
+    padding:3px;
+}
+.text{
+    width:50px;
+    padding:2px;
+    margin:2px;
+}
+.table{
+    position: absolute;
+    top:750px;
+    left:30px;
+    height: auto;
+}
+th{
+    background-color:black;
+    color:white;
+    z-index: 2;
+    
+}
+th,td{
+    border-bottom: 1px solid #ddd; 
+}
+th,table,td{
+    
+    border-collapse: collapse;
+    padding: 13px;
+    
+}
+
+
+.add{
+    position: absolute;
+    left:20px;
+    top:950px;
+} */
+
+
+.container{
+    border: 1px solid black;
+    height:1899px;
+    width:780px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.box{
+    position: absolute;
+    border:1px solid black;
+    color:blue;
+    left:20px;
+    top:20px;
+    height: 108px;
+    width: 108px;
+}
+.upload{
+    position: absolute;
+    top:50px;
+    left:60px;
+}
+.taxv{
+    font-size:20px;
+    position: absolute;
+    right:10px;
+    top:20px;
+    border:1px solid white;
+    padding:5px;
+    width: 180px;
+}
+
+.cname{ 
+    position: absolute;
+    left:20px;
+    top:180px;
+    border:1px solid white;
+    padding:5px;
+    
+}
+.yname{
+    position: absolute;
+    left:20px;
+    top:210px;
+    border:1px solid white;
+    padding:5px;
+}
+.cgst{
+    position: absolute;
+    left:20px;
+    top:240px;
+    border:1px solid white;
+    padding:5px;
+}
+.caddr{
+    position: absolute;
+    left:20px;
+    top:270px;
+    border:1px solid white;
+    padding:5px;
+}
+.city{
+    position: absolute;
+    left:20px;
+    top:300px;
+    border:1px solid white;
+    padding:5px;
+}
+.state{
+    position: absolute;
+    left:20px;
+    top:330px;
+    border:1px solid white;
+    padding:5px;
+}
+.country{
+    position: absolute;
+    left:20px;
+    top:360px;
+    border:1px solid white;
+    padding:5px;
+}
+.billto{
+    position: absolute;
+    left:20px;
+    top:460px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.clicom{
+    position: absolute;
+    left:20px;
+    top:490px;
+    border:1px solid white;
+    padding:5px;
+}
+.cligst{
+    position: absolute;
+    left:20px;
+    top:520px;
+    border:1px solid white;
+    padding:5px;
+}
+.cliaddr{
+    position: absolute;
+    left:20px;
+    top:550px;
+    border:1px solid white;
+    padding:5px;
+}
+.clicity{
+    position: absolute;
+    left:20px;
+    top:580px;
+    border:1px solid white;
+    padding:5px;
+}
+.clistate{
+    position: absolute;
+    left:20px;
+    top:610px;
+    border:1px solid white;
+    padding:5px;
+}
+.clicountry{
+    position: absolute;
+    left:20px;
+    top:640px;
+    border:1px solid white;
+    padding:5px;
+}
+.invoice{
+    position: absolute;
+    right:200px;
+    top:460px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.invoicedt{
+    position: absolute;
+    right:200px;
+    top:490px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.duedt{
+    position: absolute;
+    right:200px;
+    top:520px;
+    font-weight: bold;
+    border:1px solid white;
+    padding:5px;
+}
+.inv12{
+    position: absolute;
+    right:50px;
+    top:460px;
+    border:1px solid white;
+    padding:5px;
+}
+.invoicedt1{
+    position: absolute;
+    right:120px;
+    top:490px;
+    border:1px solid white;
+    padding:5px;
+}
+.duedt1{
+    position: absolute;
+    right:120px;
+    top:520px;
+    border:1px solid white;
+    padding:5px;
+}
+.supply{
+    position: absolute;
+    left:20px;
+    top:710px;
+    border:1px solid white;
+    padding:5px;
+}
+.supplystate{
+    position: absolute;
+    left:140px;
+    top:713px;
+    border:1px solid white;
+    padding:3px;
+}
+.text{
+    width:50px;
+    padding:2px;
+    margin:2px;
+}
+.table{
+    position: absolute;
+    top:750px;
+    left:30px;
+    height: auto;
+}
+th{
+    background-color:black;
+    color:white;
+    z-index: 2;
+    
+}
+th,td{
+    border-bottom: 1px solid #ddd; 
+}
+th,table,td{
+    
+    border-collapse: collapse;
+    padding: 13px;
+    
+}
+.add{
+    position: absolute;
+    left:20px;
+    top:950px;
+}
