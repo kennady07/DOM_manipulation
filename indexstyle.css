@@ -7,274 +7,56 @@
     font-weight:bold;
     margin-left:15%;
     margin-top: 3%;
+    color:blue;
 }
-/* .maincontainer{
-    
-    height:890px;
-    width:100%;
-    padding-top: 50px;
-    padding-left:17%;
-} */
+
 body{
     padding-left:20%;
 }
-/* 
+
 .container{
-    border: 1px solid black;
+    border: 1px solid rgb(128, 128, 128);
     height:1899px;
     width:780px;
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
 
 }
 .box{
     position: absolute;
-    border:1px solid black;
+    border:1px solid lightskyblue;
+    border-radius:10px;
     color:blue;
-    left:20px;
-    top:20px;
-    height: 108px;
-    width: 108px;
-}
-.upload{
-    position: absolute;
-    top:50px;
-    left:60px;
-}
-.taxv{
-    font-size:20px;
-    position: absolute;
-    right:10px;
-    top:20px;
-    border:1px solid white;
-    padding:5px;
-    width: 180px;
-}
-
-.cname{ 
-    position: absolute;
-    left:20px;
-    top:180px;
-    border:1px solid white;
-    padding:5px;
-    
-}
-.yname{
-    position: absolute;
-    left:20px;
-    top:210px;
-    border:1px solid white;
-    padding:5px;
-}
-.cgst{
-    position: absolute;
-    left:20px;
-    top:240px;
-    border:1px solid white;
-    padding:5px;
-}
-.caddr{
-    position: absolute;
-    left:20px;
-    top:270px;
-    border:1px solid white;
-    padding:5px;
-}
-.city{
-    position: absolute;
-    left:20px;
-    top:300px;
-    border:1px solid white;
-    padding:5px;
-}
-.state{
-    position: absolute;
-    left:20px;
-    top:330px;
-    border:1px solid white;
-    padding:5px;
-}
-.country{
-    position: absolute;
-    left:20px;
-    top:360px;
-    border:1px solid white;
-    padding:5px;
-}
-.billto{
-    position: absolute;
-    left:20px;
-    top:460px;
-    font-weight: bold;
-    border:1px solid white;
-    padding:5px;
-}
-.clicom{
-    position: absolute;
-    left:20px;
-    top:490px;
-    border:1px solid white;
-    padding:5px;
-}
-.cligst{
-    position: absolute;
-    left:20px;
-    top:520px;
-    border:1px solid white;
-    padding:5px;
-}
-.cliaddr{
-    position: absolute;
-    left:20px;
-    top:550px;
-    border:1px solid white;
-    padding:5px;
-}
-.clicity{
-    position: absolute;
-    left:20px;
-    top:580px;
-    border:1px solid white;
-    padding:5px;
-}
-.clistate{
-    position: absolute;
-    left:20px;
-    top:610px;
-    border:1px solid white;
-    padding:5px;
-}
-.clicountry{
-    position: absolute;
-    left:20px;
-    top:640px;
-    border:1px solid white;
-    padding:5px;
-}
-.invoice{
-    position: absolute;
-    right:200px;
-    top:460px;
-    font-weight: bold;
-    border:1px solid white;
-    padding:5px;
-}
-.invoicedt{
-    position: absolute;
-    right:200px;
-    top:490px;
-    font-weight: bold;
-    border:1px solid white;
-    padding:5px;
-}
-.duedt{
-    position: absolute;
-    right:200px;
-    top:520px;
-    font-weight: bold;
-    border:1px solid white;
-    padding:5px;
-}
-.inv12{
-    position: absolute;
-    right:50px;
-    top:460px;
-    border:1px solid white;
-    padding:5px;
-}
-.invoicedt1{
-    position: absolute;
-    right:120px;
-    top:490px;
-    border:1px solid white;
-    padding:5px;
-}
-.duedt1{
-    position: absolute;
-    right:120px;
-    top:520px;
-    border:1px solid white;
-    padding:5px;
-}
-.supply{
-    position: absolute;
-    left:20px;
-    top:710px;
-    border:1px solid white;
-    padding:5px;
-}
-.supplystate{
-    position: absolute;
-    left:140px;
-    top:713px;
-    border:1px solid white;
-    padding:3px;
-}
-.text{
-    width:50px;
-    padding:2px;
-    margin:2px;
-}
-.table{
-    position: absolute;
-    top:750px;
     left:30px;
-    height: auto;
-}
-th{
-    background-color:black;
-    color:white;
-    z-index: 2;
-    
-}
-th,td{
-    border-bottom: 1px solid #ddd; 
-}
-th,table,td{
-    
-    border-collapse: collapse;
-    padding: 13px;
-    
-}
-
-
-.add{
-    position: absolute;
-    left:20px;
-    top:950px;
-} */
-
-
-.container{
-    border: 1px solid black;
-    height:1899px;
-    width:780px;
-    border-radius: 5px;
-    position: relative;
-
-}
-.box{
-    position: absolute;
-    border:1px solid black;
-    color:blue;
-    left:20px;
-    top:20px;
-    height: 108px;
-    width: 108px;
+    padding-right:5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    top:40px;
+    height: 90px;
+    width: 120px;
+    cursor: pointer;
 }
 .upload{
     position: absolute;
-    top:50px;
-    left:60px;
+    top:60px;
+    left:100px;
+    color:grey;
 }
 .taxv{
-    font-size:20px;
+    font-size:40px;
     position: absolute;
-    right:10px;
-    top:20px;
+    right:55px;
+    top:52px;
     border:1px solid white;
     padding:5px;
-    width: 180px;
+    width: 280px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+.taxv:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 
 .cname{ 
@@ -283,7 +65,13 @@ th,table,td{
     top:180px;
     border:1px solid white;
     padding:5px;
-    
+    border-radius: 5px;
+    width:58%;
+}
+.cname:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .yname{
     position: absolute;
@@ -291,6 +79,13 @@ th,table,td{
     top:210px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:58%;
+}
+.yname:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .cgst{
     position: absolute;
@@ -298,6 +93,13 @@ th,table,td{
     top:240px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:58%;
+}
+.cgst:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .caddr{
     position: absolute;
@@ -305,6 +107,13 @@ th,table,td{
     top:270px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:58%;
+}
+.caddr:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .city{
     position: absolute;
@@ -312,6 +121,13 @@ th,table,td{
     top:300px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:58%;
+}
+.city:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .state{
     position: absolute;
@@ -319,6 +135,13 @@ th,table,td{
     top:330px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:58%;
+}
+.state:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .country{
     position: absolute;
@@ -326,6 +149,13 @@ th,table,td{
     top:360px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:58%;
+}
+.country:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .billto{
     position: absolute;
@@ -334,6 +164,13 @@ th,table,td{
     font-weight: bold;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.billto:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .clicom{
     position: absolute;
@@ -341,6 +178,13 @@ th,table,td{
     top:490px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.clicom:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .cligst{
     position: absolute;
@@ -348,6 +192,13 @@ th,table,td{
     top:520px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.cligst:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .cliaddr{
     position: absolute;
@@ -355,6 +206,13 @@ th,table,td{
     top:550px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.cliaddr:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .clicity{
     position: absolute;
@@ -362,6 +220,13 @@ th,table,td{
     top:580px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.clicity:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .clistate{
     position: absolute;
@@ -369,6 +234,13 @@ th,table,td{
     top:610px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.clistate:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .clicountry{
     position: absolute;
@@ -376,70 +248,142 @@ th,table,td{
     top:640px;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    width:52%;
+}
+.clicountry:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .invoice{
     position: absolute;
-    right:200px;
+    right:220px;
     top:460px;
     font-weight: bold;
     border:1px solid white;
     padding:5px;
+    border-radius: 5px;
+    color:grey;
+    width: 110px;
+}
+.invoice:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .invoicedt{
     position: absolute;
-    right:200px;
+    right:212px;
     top:490px;
     font-weight: bold;
     border:1px solid white;
     padding:5px;
+    color:grey;
+    width: 120px;
+}
+.invoicedt:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .duedt{
     position: absolute;
-    right:200px;
+    right:220px;
     top:520px;
     font-weight: bold;
     border:1px solid white;
     padding:5px;
+    color:grey;
+    width: 110px;
+}
+.duedt:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .inv12{
     position: absolute;
-    right:50px;
+    right:64px;
     top:460px;
     border:1px solid white;
     padding:5px;
+    color:grey;
+    width: 120px;
+}
+.inv12:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .invoicedt1{
     position: absolute;
-    right:120px;
+    right:65px;
     top:490px;
     border:1px solid white;
     padding:5px;
+    color:grey;
+}
+.invoicedt1:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .duedt1{
     position: absolute;
-    right:120px;
+    right:65px;
     top:520px;
     border:1px solid white;
     padding:5px;
+    color:grey;
+}
+.duedt1:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .supply{
     position: absolute;
     left:20px;
-    top:710px;
+    top:695px;
     border:1px solid white;
     padding:5px;
 }
 .supplystate{
     position: absolute;
     left:140px;
-    top:713px;
+    top:698px;
     border:1px solid white;
     padding:3px;
+    width: 200px;
+}
+.supplystate:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .text{
     width:50px;
     padding:2px;
     margin:2px;
+    border:black;
+    
+}
+.text1{
+    width:50px;
+    padding:2px;
+    margin:2px;
+    border:black;
+    background-color: black;
+    color:white;
+}
+.text2{
+    width:140px;
+    padding:2px;
+    margin:2px;
+    border:black;
+    background-color: black;
+    color:white;
 }
 .table{
     position: absolute;
@@ -466,12 +410,14 @@ th,table,td{
     position: absolute;
     left:26px;
     top:910px;
+    cursor: pointer;
 }
 .add1{
     position: absolute;
     left:56px;
     top:916px;
     color:blue;
+    cursor: pointer;
 }
 .subtot{
     position: absolute;
@@ -565,39 +511,96 @@ th,table,td{
     margin:2px;
 }
 
+.symbol{
+    position: absolute;
+    right:19%;
+    /* top:963px; */
+    top:1033px;
+    width:30px;
+    padding:2px;
+    margin:2px;
+}
+
+
 .note{
     position: absolute;
     left:30px;
     top:1133px;
     width:90%;
-    padding:2px;
+    padding:5px;
     margin:2px;
     font-weight: bold;
+    color:black;
+    border: 1px solid white;
+    
+}
+.note:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .notepara{
     position: absolute;
     left:30px;
     top:1160px;
     width:90%;
-    padding:2px;
+    padding:5px;
     margin:2px;
-    
+    color:grey;
+    border: 1px solid white;
+}
+.notepara:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .terms{
     position: absolute;
     left:30px;
     top:1270px;
     width:90%;
-    padding:2px;
+    padding:5px;
     margin:2px;
     font-weight: bold;
+    color:black;
+    border: 1px solid white;
+}
+.terms:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
 }
 .termspara{
     position: absolute;
     left:30px;
     top:1297px;
     width:90%;
-    padding:2px;
+    padding:5px;
     margin:2px;
-    
+    color:grey;
+    border: 1px solid white;
+}
+.termspara:hover{
+    border:1px solid skyblue;
+    border-radius: 5px;
+
+}
+.logo{
+    position: absolute;
+    top:1380px;
+    right:70px;
+    cursor:pointer;
+}
+.ad{
+    position: absolute;
+    top:1450px;
+    right:130px;
+    color:black;
+    font-size: large;
+}
+.line{
+    position: absolute;
+    top:1465px;
+    color:black;
+    height: 10px;
 }
