@@ -1,3 +1,58 @@
+// document.getElementById("symbol1").addEventListener("click",function(){
+//     let ele=document.getElementById("symbol1");
+//     ele.readOnly=false;
+//     ele.style.padding="10px";
+//     ele.type=select;
+// })
+// document.getElementById("taxv1").addEventListener("click",function(){
+//     this.style.border="1px solid skyblue";
+// })
+document.getElementById("upload").addEventListener("click",function(){
+    let file=document.createElement("input");
+    file.type="file";
+    file.click();
+
+})
+document.getElementById("symbol1").addEventListener("click", function() {
+    let ele = this;
+    ele.readOnly = false;
+
+    // Create and configure the select element
+    let select = document.createElement("select");
+    ["$", "₹", "﷼"].forEach(symbol => {
+        let option = document.createElement("option");
+        option.value = symbol;
+        option.text = symbol;
+        select.appendChild(option);
+    });
+
+    // Position the select element
+    let rect = ele.getBoundingClientRect();
+    select.style.position = "absolute";
+    select.style.left = `${rect.left}px`;
+    select.style.top = `${rect.bottom + window.scrollY}px`;
+    select.style.width = `${rect.width}px`;
+    
+    // Append and handle selection
+    document.body.appendChild(select);
+    select.focus();
+    select.addEventListener("change", () => {
+        ele.value = select.value;
+        ele.readOnly = true;
+        select.remove();
+    });
+
+    // Remove select when clicking outside
+    document.addEventListener("click", function handler(event) {
+        if (!select.contains(event.target) && event.target !== ele) {
+            ele.readOnly = true;
+            select.remove();
+            document.removeEventListener("click", handler);
+        }
+    });
+});
+
+
 let rowcnt=2;
 let addrow1=document.getElementById("addrow");
 let addrow2=document.getElementById("addrow1");
@@ -88,10 +143,13 @@ function update_addrow_pos(){
     document.getElementById("cesstotval1").style.top=(table.offsetHeight+table.offsetTop+115)+"px";
     document.getElementById("tot1").style.top=(table.offsetHeight+table.offsetTop+145)+"px";
     document.getElementById("totval1").style.top=(table.offsetHeight+table.offsetTop+145)+"px";
+    document.getElementById("symbol1").style.top=(table.offsetHeight+table.offsetTop+145)+"px";
     document.getElementById("note1").style.top=(tot1.offsetHeight+tot1.offsetTop+35)+"px";
     document.getElementById("notepara1").style.top=(tot1.offsetHeight+tot1.offsetTop+65)+"px";
     document.getElementById("terms1").style.top=(tot1.offsetHeight+tot1.offsetTop+145)+"px";
     document.getElementById("termspara1").style.top=(tot1.offsetHeight+tot1.offsetTop+175)+"px";
+    document.getElementById("logo1").style.top=(tot1.offsetHeight+tot1.offsetTop+230)+"px";
+    document.getElementById("ad1").style.top=(tot1.offsetHeight+tot1.offsetTop+300)+"px";
     
 
 }
