@@ -1,247 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <link rel="stylesheet" href="indexstyle.css">
-</head>
-<body>
-    <h2 class="heading">FREE GST INVOICE GENERATOR BY ZOHO</h2>
-    <br><br>
-    <div class="maincontainer">
-        <div class="container">
-            <div class="box">
-                <img src="./assets/images/img1.png" alt="abcd">
-            </div>
-            <pre class="upload">
-                Upload Logo
-                240 x 240 pixels @ 72 DPI,
-                Maximum size of 1MB.
-            </pre>
-            <input type="text"value="TAXINVOICE" class="taxv">
-           
-            <input type="text" placeholder="Your Company Name" class="cname">
-            <input type="text" placeholder="Your Name" class="yname">
-            <input type="text" placeholder="Company GSTIN" class="cgst">
-            <input type="text" placeholder="Company Address" class="caddr">
-            <input type="text" placeholder="City" class="city">
-            <input type="text" placeholder="state" class="state">
-            <input type="text" placeholder="India" class="country">
-            
-            </select><br><br><br><br><br>
-
-            <input type="text"value="BILL TO:" class="billto">
-            <input type="text" placeholder="Your Client's Company" class="clicom">
-            <input type="text" placeholder="Client GSTIN" class="cligst">
-            <input type="text" placeholder="Client Address" class="cliaddr">
-            <input type="text" placeholder="City" class="clicity">
-            <input type="text" placeholder="state" class="clistate">
-            <input type="text" placeholder="India" class="clicountry">
-
-            <input type="text"value="INVOICE#" class="invoice">
-            <input type="text"value="INVOICE DATE" class="invoicedt">
-            <input type="text"value="DUE DATE" class="duedt">
-            <input type="text" placeholder="INV-12" class="inv12">
-            <input type="date" class="invoicedt1">
-            <input type="date" class="duedt1">
-            <br><br>
-            <label for="Place Of Supply:" class="supply">Place Of Supply:</label>
-            <input type="text" placeholder="State" class="supplystate">
-            <br><br><br>
-            <table class="table" id="table1">
-                <tr>
-                    <th><input type="text" value="Item Description" ></th>
-                    <th><input type="text" value="QTY" class="text"></th>
-                    <th><input type="text" value="RATE" class="text"></th>
-                    <th>SGST</th>
-                    <th>CGST</th>
-                    <th>Cess</th>
-                    <th><input type="text" value="Amount" class="text"></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>
-                        <textarea>Brochure Design</textarea><br>
-                        <input type="text" placeholder="HSN/SAC">
-                    </td>
-
-                  
-                    <td><input type="number" class="text"></td>
-                    <td><input type="text" value="0.000" class="text"></td>
-                    <td>
-                        <input type="number" class="text"><br>
-                        <input type="text" value="0.000" class="text">
-
-                    </td>
-                    <td>
-                        <input type="number" class="text"><br>
-                        <input type="text" value="0.000" class="text">
-                    </td>
-                    <td>
-                        <input type="number" class="text"><br>
-                        <input type="text" value="0.000" class="text">
-                    </td>
-                    <td><input type="text" value="0.000" class="text"></td>
-                    <td><img src="./assets/images/icon1.png" alt="kkk" style="width:30px;height:30px;display:none" id="wrong"></td>
-                </tr>
-
-                
-            </table>
-            <img src="./assets/images/icon2.png" alt="jjjjj" class="add" id="addrow">
-            
-        </div>
-
-        
-
-    </div>
-
-   <script src="indexscript.js"></script> 
-</body>
-</html> 
-------------------------------------
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dynamic Table with Subtotal</title>
-    <style>
-        /* Add some styles for better visualization */
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-        #subtotal {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <table id="table1">
-        <tr>
-            <th>Description</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>SGST</th>
-            <th>CGST</th>
-            <th>CESS</th>
-            <th>Total</th>
-            <th>Action</th>
-        </tr>
-    </table>
-    <button id="addrow">Add Row</button>
-    <button id="addrow1">Add Row1</button>
-    <button id="wrong1">Remove Last Row</button>
-
-    <div id="subtotal">
-        <span>Subtotal: </span>
-        <span id="subtotal-value">0.000</span>
-    </div>
-
-    <template id="row-template">
-        <tr>
-            <td>
-                <textarea>Enter Item name/description</textarea><br>
-                <input type="text" placeholder="HSN/SAC">
-            </td>
-            <td><input type="number" class="text qty" value="0"></td>
-            <td><input type="text" class="text price" value="0.000"></td>
-            <td>
-                <input type="number" class="text sgsttax" value="0"><br>
-                <input type="text" class="text sgstamt" value="0.000" readonly>
-            </td>
-            <td>
-                <input type="number" class="text cgsttax" value="0"><br>
-                <input type="text" class="text cgstamt" value="0.000" readonly>
-            </td>
-            <td>
-                <input type="number" class="text cesstax" value="0"><br>
-                <input type="text" class="text cessamt" value="0.000" readonly>
-            </td>
-            <td><input type="text" class="text amt" value="0.000" readonly></td>
-            <td>
-                <img src="./assets/images/icon1.png" alt="kkk" style="width:30px;height:30px;display:inline-block;vertical-align:middle;" class="deleterow">
-            </td>
-        </tr>
-    </template>
-
-    <script>
-        let rowcnt = 2;
-
-        document.getElementById("addrow").addEventListener("click", new_row_addevent);
-        document.getElementById("addrow1").addEventListener("click", new_row_addevent);
-
-        document.getElementById("wrong1").addEventListener("click", function() {
-            let table = document.getElementById("table1");
-            let len = table.rows.length;
-            if (len > 2) {
-                table.deleteRow(len - 1);
-                update_addrow_pos();
-            }
-        });
-
-        document.getElementById("table1").addEventListener("blur", function(event) {
-            if (event.target.classList.contains("qty") || event.target.classList.contains("price") ||
-                event.target.classList.contains("sgsttax") || event.target.classList.contains("cgsttax") || event.target.classList.contains("cesstax")) {
-                update_row_totalamt(event.target.closest("tr"));
-                updateSubtotal();
-            }
-        }, true);
-
-        document.getElementById("table1").addEventListener("click", function(event) {
-            if (event.target.classList.contains("deleterow")) {
-                event.target.closest("tr").remove();
-                update_addrow_pos();
-                updateSubtotal();
-            }
-        });
-
-        function new_row_addevent() {
-            let table = document.getElementById("table1");
-            let template = document.getElementById("row-template");
-            let newRow = template.content.cloneNode(true);
-            table.appendChild(newRow);
-
-            update_addrow_pos();
-            updateSubtotal();
-            alert("New row added!");
-        }
-
-        function update_addrow_pos() {
-            let table = document.getElementById("table1");
-            document.getElementById("addrow").style.top = (table.offsetHeight + table.offsetTop + 20) + "px";
-            document.getElementById("addrow1").style.top = (table.offsetHeight + table.offsetTop + 25) + "px";
-            document.getElementById("subtotal").style.top = (table.offsetHeight + table.offsetTop + 25) + "px";
-        }
-
-        function update_row_totalamt(row) {
-            let qty = parseInt(row.querySelector(".qty").value) || 0;
-            let price = parseFloat(row.querySelector(".price").value) || 0;
-            if (qty > 0 && price > 0) {
-                let totalamt = qty * price;
-                row.querySelector(".amt").value = totalamt.toFixed(3);
-            }
-        }
-
-        function updateSubtotal() {
-            let table = document.getElementById("table1");
-            let rows = table.querySelectorAll("tr");
-            let subtotal = 0;
-
-            rows.forEach(function(row) {
-                let amt = parseFloat(row.querySelector(".amt").value) || 0;
-                subtotal += amt;
-            });
-
-            document.getElementById("subtotal-value").textContent = subtotal.toFixed(3);
-        }
-    </script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -255,15 +11,15 @@
     <br><br>
 
     <div class="container" id="container1">
-        <div class="box">
+        <div class="box" id="upload">
             <img src="./assets/images/img1.png" alt="abcd">
         </div>
         <pre class="upload">
-            Upload Logo
+            <span style="color:black">Upload Logo</span>
             240 x 240 pixels @ 72 DPI,
             Maximum size of 1MB.
         </pre>
-        <input type="text"value="TAXINVOICE" class="taxv">
+        <input type="text"value="TAX INVOICE" class="taxv" id="taxv1">
         
         <input type="text" placeholder="Your Company Name" class="cname">
         <input type="text" placeholder="Your Name" class="yname">
@@ -295,13 +51,13 @@
         <br><br><br>
         <table class="table" id="table1">
             <tr>
-                <th><input type="text" value="Item Description" ></th>
-                <th><input type="text" value="QTY" class="text"></th>
-                <th><input type="text" value="RATE" class="text"></th>
+                <th><input type="text" value="Item Description" class="text2"></th>
+                <th><input type="text" value="QTY" class="text1"></th>
+                <th><input type="text" value="RATE" class="text1"></th>
                 <th>SGST</th>
                 <th>CGST</th>
                 <th>Cess</th>
-                <th><input type="text" value="Amount" class="text"></th>
+                <th><input type="text" value="Amount" class="text1"></th>
                 <th></th>
             </tr>
             <tr id="1">
@@ -344,16 +100,15 @@
 
         <input type="text"value="TOTAL" class="tot" id="tot1">
         <input type="text" value="206.000" class="totval" id="totval1" readonly>
+        <input type="text" value="$" class="symbol" id="symbol1" readonly>
         <br><br>
         <input type="text"value="Notes" class="note" id="note1">
         <textarea class="notepara" id="notepara1">It was great doing business with you.</textarea>
         <input type="text"value="Terms & Conditions" class="terms" id="terms1">
         <textarea class="termspara" id="termspara1">Please make the payment by the due date.</textarea>
-        
-
-
-
-        
+        <a href="https://www.zoho.com/in/invoice/?src=Free%20Invoice%20Creator%20-%20Zoho%20Invoice" class="logo" id="logo1"><img src="./assets/images/icon3.png" alt="jjj"></a>
+        <p class="ad" id="ad1">100% Free Invoicing Solution</p>  
+        <hr class="line" id="line1" >
     </div>
    <script src="indexscript.js"></script> 
 </body>
