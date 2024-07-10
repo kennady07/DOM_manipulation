@@ -464,6 +464,140 @@ th,table,td{
 }
 .add{
     position: absolute;
-    left:20px;
-    top:950px;
+    left:26px;
+    top:910px;
+}
+.add1{
+    position: absolute;
+    left:56px;
+    top:916px;
+    color:blue;
+}
+.subtot{
+    position: absolute;
+    left:40%;
+    top:916px;
+    color:grey;
+    width:130px;
+}
+.subtotval{
+    position: absolute;
+    right:9.5%;
+    top:913px;
+    width:70px;
+    padding:2px;
+    margin:2px;
+}
+
+
+.sgsttot{
+    position: absolute;
+    left:40%;
+    top:946px;
+    color:grey;
+    width:130px;
+    
+}
+
+.sgsttotval{
+    position: absolute;
+    right:9.5%;
+    top:943px;
+    width:70px;
+    padding:2px;
+    margin:2px;
+    
+}
+
+.cgsttot{
+    position: absolute;
+    left:40%;
+    top:976px;
+    color:grey;
+    width:130px;
+    
+}
+
+.cgsttotval{
+    position: absolute;
+    right:9.5%;
+    top:973px;
+    width:70px;
+    padding:2px;
+    margin:2px;
+    
+}
+
+.cesstot{
+    position: absolute;
+    left:40%;
+    top:1006px;
+    color:grey;
+    width:130px;
+    
+}
+
+.cesstotval{
+    position: absolute;
+    right:9.5%;
+    top:1003px;
+    width:70px;
+    padding:2px;
+    margin:2px;
+    
+}
+
+.tot{
+    position: absolute;
+    left:40%;
+    /* top:966px; */
+    top:1036px;
+    color:grey;
+    width:130px;
+}
+.totval{
+    position: absolute;
+    right:9.5%;
+    /* top:963px; */
+    top:1033px;
+    width:70px;
+    padding:2px;
+    margin:2px;
+}
+
+.note{
+    position: absolute;
+    left:30px;
+    top:1133px;
+    width:90%;
+    padding:2px;
+    margin:2px;
+    font-weight: bold;
+}
+.notepara{
+    position: absolute;
+    left:30px;
+    top:1160px;
+    width:90%;
+    padding:2px;
+    margin:2px;
+    
+}
+.terms{
+    position: absolute;
+    left:30px;
+    top:1270px;
+    width:90%;
+    padding:2px;
+    margin:2px;
+    font-weight: bold;
+}
+.termspara{
+    position: absolute;
+    left:30px;
+    top:1297px;
+    width:90%;
+    padding:2px;
+    margin:2px;
+    
 }
