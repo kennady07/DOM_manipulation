@@ -5,39 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <h2 class="heading">FREE GST INVOICE GENERATOR BY ZOHO</h2>
     <br><br>
 
     <div class="container" id="container1">
-        <div class="box" id="upload">
-            <img src="./assets/images/img1.png" alt="abcd">
+        <div class="box" id="box">
+            <img src="./assets/images/img1.png" alt="img" id="displayimg">
+            <input type="file" id="Inputimg" accept="image/*" style="display: none;padding:30px;border:1px solid black">
+            <div class="icon edit1" id="edit"  style="display:none"><i class="fas fa-edit"></i></div>
+            <div class="icon delete" id="delete"  style="display:none"><i class="fas fa-trash-alt"></i></div>
         </div>
-        <pre class="upload">
+        <pre class="upload" id="upload1">
             <span style="color:black">Upload Logo</span>
             240 x 240 pixels @ 72 DPI,
             Maximum size of 1MB.
         </pre>
         <input type="text"value="TAX INVOICE" class="taxv" id="taxv1">
         
-        <input type="text" placeholder="Your Company Name" class="cname">
+        <input type="text" placeholder="Your Company Name" class="cname" id="cname1" oninput="changefont()">
         <input type="text" placeholder="Your Name" class="yname">
         <input type="text" placeholder="Company GSTIN" class="cgst">
         <input type="text" placeholder="Company Address" class="caddr">
         <input type="text" placeholder="City" class="city">
-        <input type="text" placeholder="state" class="state">
-        <input type="text" placeholder="India" class="country">
+        <input type="text" placeholder="state" class="state" id="state1">
+        <select name="state" id="state2" style="display: none;" class="state">
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Andra Pradesh">Andra Pradesh</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Hydrabad">Hydrabad</option>
+            <option value="Goa">Goa</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Gujarat">Gujarat</option>
+        </select>
+        <input type="text" placeholder="India" class="country" id="country1">
+        <select name="country" id="country2" style="display: none;" class="country">
+            <option value="India">India</option>
+            <option value="England">England</option>
+            <option value="Australia">Australia</option>
+            <option value="NewZeland">NewZeland</option>
+            <option value="America">America</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Paktistan">Paktistan</option>
+            <option value="Sri Langla">Sri Langla</option>
+            <option value="West Indies">West Indies</option>
+        </select>
         
-        </select><br><br><br><br><br>
+        <br><br><br><br><br>
 
         <input type="text"value="BILL TO:" class="billto">
         <input type="text" placeholder="Your Client's Company" class="clicom">
         <input type="text" placeholder="Client GSTIN" class="cligst">
         <input type="text" placeholder="Client Address" class="cliaddr">
         <input type="text" placeholder="City" class="clicity">
-        <input type="text" placeholder="state" class="clistate">
-        <input type="text" placeholder="India" class="clicountry">
+        <input type="text" placeholder="state" class="clistate" id="clistate1">
+        <select name="state" style="display: none;" class="clistate"  id="clistate2">
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Andra Pradesh">Andra Pradesh</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Hydrabad">Hydrabad</option>
+            <option value="Goa">Goa</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Gujarat">Gujarat</option>
+        </select>
+        <input type="text" placeholder="India" class="clicountry" id="clicountry1">
+        <select name="country"  style="display: none;" class="clicountry" id="clicountry2">
+            <option value="India">India</option>
+            <option value="England">England</option>
+            <option value="Australia">Australia</option>
+            <option value="NewZeland">NewZeland</option>
+            <option value="America">America</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Paktistan">Paktistan</option>
+            <option value="Sri Langla">Sri Langla</option>
+            <option value="West Indies">West Indies</option>
+        </select>
 
         <input type="text"value="INVOICE#" class="invoice">
         <input type="text"value="INVOICE DATE" class="invoicedt">
@@ -85,6 +133,7 @@
             </tr>   
         </table>
         <img src="./assets/images/icon2.png" alt="jjjjj" class="add" id="addrow">
+        <p id="addrow2" class="addrow1">Add row</p>
         <p class="add1" id="addrow1">Add Line Item</p>
         <input type="text"value="SUB TOTAL" class="subtot" id="subtot1">
         <input type="text" value="200.000" class="subtotval" id="subtotval1" readonly>
@@ -101,19 +150,27 @@
         <input type="text"value="TOTAL" class="tot" id="tot1">
         <input type="text" value="206.000" class="totval" id="totval1" readonly>
         <input type="text" value="$" class="symbol" id="symbol1" readonly>
+        <select name="country"  style="display: none;" class="symbol" id="symbol2">
+            <option value="INR">INR-Indian Rupee</option>
+            <option value="ANG">ANG-Netherland Antillian Gailder</option>
+            <option value="BBT">BBT-Taka</option>
+            <option value="BND">BND-Brunei Dollar</option>
+            <option value="ALL">ALL-Lek</option>
+            <option value="IDR">IDR-Rupiah</option>
+        </select>
         <br><br>
         <input type="text"value="Notes" class="note" id="note1">
         <textarea class="notepara" id="notepara1">It was great doing business with you.</textarea>
         <input type="text"value="Terms & Conditions" class="terms" id="terms1">
         <textarea class="termspara" id="termspara1">Please make the payment by the due date.</textarea>
         <a href="https://www.zoho.com/in/invoice/?src=Free%20Invoice%20Creator%20-%20Zoho%20Invoice" class="logo" id="logo1"><img src="./assets/images/icon3.png" alt="jjj"></a>
+        <p class="logotext" id="logotext">Click Here</p>
         <p class="ad" id="ad1">100% Free Invoicing Solution</p>  
-        <hr class="line" id="line1" >
+        <!-- <hr class="line" id="line1" > -->
     </div>
    <script src="indexscript.js"></script> 
 </body>
 </html> 
-
 
 
 
