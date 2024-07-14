@@ -1,55 +1,162 @@
-// document.getElementById("symbol1").addEventListener("click",function(){
-//     let ele=document.getElementById("symbol1");
-//     ele.readOnly=false;
-//     ele.style.padding="10px";
-//     ele.type=select;
-// })
-// document.getElementById("taxv1").addEventListener("click",function(){
-//     this.style.border="1px solid skyblue";
-// })
-document.getElementById("upload").addEventListener("click",function(){
-    let file=document.createElement("input");
-    file.type="file";
-    file.click();
 
-})
-document.getElementById("symbol1").addEventListener("click", function() {
-    let ele = this;
-    ele.readOnly = false;
 
-    // Create and configure the select element
-    let select = document.createElement("select");
-    ["$", "₹", "﷼"].forEach(symbol => {
-        let option = document.createElement("option");
-        option.value = symbol;
-        option.text = symbol;
-        select.appendChild(option);
-    });
+document.getElementById("state1").addEventListener("click",function(){
+    this.style.display="none";
+    let state2=document.getElementById("state2");
+    state2.style.display="block";
 
-    // Position the select element
-    let rect = ele.getBoundingClientRect();
-    select.style.position = "absolute";
-    select.style.left = `${rect.left}px`;
-    select.style.top = `${rect.bottom + window.scrollY}px`;
-    select.style.width = `${rect.width}px`;
+    if(!state2.changeListenerAdded){
+        state2.addEventListener("change",function(){
+            if(state2.value){
+                let val=state2.options[state2.selectedIndex].text;
+                let state1=document.getElementById("state1");
+                state1.value=val;
+                state1.style.display="block";
+                state2.style.display="none";
+            }
+        }) 
+        state2.changeListenerAdded=true;
+    }
     
-    // Append and handle selection
-    document.body.appendChild(select);
-    select.focus();
-    select.addEventListener("change", () => {
-        ele.value = select.value;
-        ele.readOnly = true;
-        select.remove();
-    });
+});
 
-    // Remove select when clicking outside
-    document.addEventListener("click", function handler(event) {
-        if (!select.contains(event.target) && event.target !== ele) {
-            ele.readOnly = true;
-            select.remove();
-            document.removeEventListener("click", handler);
-        }
-    });
+
+document.getElementById("country1").addEventListener("click",function(){
+    this.style.display="none";
+    let country2=document.getElementById("country2");
+    country2.style.display="block";
+    if(!country2.changeListenerAdded){
+        country2.addEventListener("change",function(){
+            if(country2.value){
+                let val=country2.options[country2.selectedIndex].text;
+                let country1=document.getElementById("country1");
+                country1.value=val;
+                country1.style.display="block";
+                country2.style.display="none";
+            }
+
+        })
+        country2.changeListenerAdded=true;
+    }
+})
+
+
+
+document.getElementById("clistate1").addEventListener("click",function(){
+    this.style.display="none";
+    let state2=document.getElementById("clistate2");
+    state2.style.display="block";
+
+    if(!state2.changeListenerAdded){
+        state2.addEventListener("change",function(){
+            if(state2.value){
+                let val=state2.options[state2.selectedIndex].text;
+                let state1=document.getElementById("clistate1");
+                state1.value=val;
+                state1.style.display="block";
+                state2.style.display="none";
+            }
+        }) 
+        state2.changeListenerAdded=true;
+    }
+    
+});
+
+
+document.getElementById("clicountry1").addEventListener("click",function(){
+    this.style.display="none";
+    let country2=document.getElementById("clicountry2");
+    country2.style.display="block";
+    if(!country2.changeListenerAdded){
+        country2.addEventListener("change",function(){
+            if(country2.value){
+                let val=country2.options[country2.selectedIndex].text;
+                let country1=document.getElementById("clicountry1");
+                country1.value=val;
+                country1.style.display="block";
+                country2.style.display="none";
+            }
+
+        })
+        country2.changeListenerAdded=true;
+    }
+})
+
+
+document.getElementById("symbol1").addEventListener("click",function(){
+    this.style.display="none";
+    let state2=document.getElementById("symbol2");
+    state2.style.display="block";
+
+    if(!state2.changeListenerAdded){
+        state2.addEventListener("change",function(){
+            if(state2.value){
+                let val=state2.options[state2.selectedIndex].text;
+                let state1=document.getElementById("symbol1");
+                state1.value=val;
+                state1.style.display="block";
+                state2.style.display="none";
+            }
+        }) 
+        state2.changeListenerAdded=true;
+    }
+    
+});
+
+function changefont(){
+    let val=document.getElementById("cname1");
+    val.style.fontWeight="bold";
+    val.style.fontSize="15px";
+    val.style.color="grey";   
+}
+
+
+const displayimg = document.getElementById('displayimg');
+const Inputimg = document.getElementById('Inputimg');
+const editicon= document.getElementById('edit');
+const deleteicon = document.getElementById('delete');
+const upload = document.getElementById('upload1');
+
+
+function handleImageDisplay() {
+    const file = Inputimg.files[0];
+    if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            displayimg.src = e.target.result;
+            displayimg.style.display = 'block';
+            displayimg.style.height="90px";
+            displayimg.style.width="90px";
+            upload.style.display="none";
+            editicon.style.display = 'block';
+            deleteicon.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+displayimg.addEventListener('click',function(){
+    Inputimg.click();
+});
+
+
+Inputimg.addEventListener('change', function() {
+    handleImageDisplay();
+});
+
+
+editicon.addEventListener('click', function(){
+    Inputimg.click();
+});
+
+
+deleteicon.addEventListener('click', () => {
+    displayimg.src = './assets/images/img1.png'; 
+    Inputimg.value = ''; 
+    displayimg.style.display = 'block';
+    editicon.style.display = 'none';
+    deleteicon.style.display = 'none';
+    upload.style.display="block";
 });
 
 
@@ -88,8 +195,23 @@ function new_row_addevent(){
     update_addrow_pos();
 }
 
+function handletextin(){
+    document.getElementById("addrow2").style.display="block";
+}
+
+function handletextout(){
+    document.getElementById("addrow2").style.display="none";
+}
+
 addrow1.addEventListener("click",new_row_addevent);
 addrow2.addEventListener("click",new_row_addevent);
+
+addrow1.addEventListener("mouseover",handletextin);
+addrow2.addEventListener("mouseover",handletextin);
+
+addrow1.addEventListener("mouseout",handletextout);
+addrow2.addEventListener("mouseout",handletextout);
+
 document.getElementById("wrong1").addEventListener("click",function(){
     let domcollect=document.getElementById("table1");
     let len=domcollect.rows.length;
@@ -133,6 +255,7 @@ function update_addrow_pos(){
     let table=document.getElementById("table1");
     document.getElementById("addrow").style.top=(table.offsetHeight+table.offsetTop+20)+"px";
     document.getElementById("addrow1").style.top=(table.offsetHeight+table.offsetTop+25)+"px";
+    document.getElementById("addrow2").style.top=(table.offsetHeight+table.offsetTop+45)+"px";
     document.getElementById("subtot1").style.top=(table.offsetHeight+table.offsetTop+25)+"px";
     document.getElementById("subtotval1").style.top=(table.offsetHeight+table.offsetTop+25)+"px";
     document.getElementById("sgsttot1").style.top=(table.offsetHeight+table.offsetTop+55)+"px";
@@ -149,8 +272,9 @@ function update_addrow_pos(){
     document.getElementById("terms1").style.top=(tot1.offsetHeight+tot1.offsetTop+145)+"px";
     document.getElementById("termspara1").style.top=(tot1.offsetHeight+tot1.offsetTop+175)+"px";
     document.getElementById("logo1").style.top=(tot1.offsetHeight+tot1.offsetTop+230)+"px";
+    document.getElementById("logotext").style.top=(tot1.offsetHeight+tot1.offsetTop+270)+"px";
     document.getElementById("ad1").style.top=(tot1.offsetHeight+tot1.offsetTop+300)+"px";
-    
+    document.getElementById("line1").style.top=(tot1.offsetHeight+tot1.offsetTop+350)+"px";
 
 }
 
@@ -249,9 +373,7 @@ function update_tax_total(){
         cgst_total_tax+=cgst;
         cess_total_tax+=cess;
     })
-    // if( sgst_total_tax >0 &&  cgst_total_tax>0 &&  cess_total_tax>0){
-    //     update_sgst_csgst_cess_pos();
-    // }
+   
     if(sgst_total_tax>0){
         document.getElementById("sgsttot1").style.display="block";
         document.getElementById("sgsttotval1").style.display="block";
@@ -283,29 +405,13 @@ function update_tax_total(){
 }
 
 
+function handlelogoin(){
+    document.getElementById("logotext").style.display="block";
+}
 
-
-
-
-
-
-
-
-
-
-
-// <!-- <select name="state" class="state">
-//                 <option value="tn">tn</option>
-//                 <option value="tn">kl</option>
-//                 <option value="tn">an</option>
-//                 <option value="tn">tk</option>
-//                 <option value="tn">fg</option>
-//                 <option value="tn">tnwdd</option>
-//             </select>
-//             <select name="India" class="country">
-//                 <option value="tn">tn</option>
-//                 <option value="tn">kl</option>
-//                 <option value="tn">an</option>
-//                 <option value="tn">tk</option>
-//                 <option value="tn">fg</option>
-//                 <option value="tn">tnwdd</option> --></select>
+function handlelogoout(){
+    document.getElementById("logotext").style.display="none";
+}
+let logo1=document.getElementById("logo1");
+logo1.addEventListener("mouseover",handlelogoin);
+logo1.addEventListener("mouseout",handlelogoout);
